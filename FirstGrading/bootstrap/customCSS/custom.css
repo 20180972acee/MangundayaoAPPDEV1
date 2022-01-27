@@ -1,0 +1,63 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:block;
+    margin: 1% auto;
+    color:midnightblue;
+    border: 2px solid #003254;
+    width: 90%;
+}
+
+body{
+    display: block;
+    background:linen;
+    border: none;
+    width: 100%;
+}
+
+.main{
+    font-style: italic;
+}
+
+.container{
+    border: 1px solid mediumspringgreen;
+}
+
+div{
+    max-height: fit-content;
+    border: none;
+}
+
+li{
+    font-style: normal;
+    width: 130px;
+    padding: 5px;
+    border-radius: .6em;
+    text-align:center;
+    border: none;
+    background-color: navy;
+    color:oldlace;
+}
+li:hover{
+    background-color:orange;
+}
+
+ul{
+    padding: 0;
+    border: none;
+}
+
+section{
+    float: right;
+    margin: 0 1.5%;
+    width: 70%;
+}
+
+aside{
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+.sub{
+    display: flex;
+}
