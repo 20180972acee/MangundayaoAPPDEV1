@@ -1,73 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--language-->
+    <head>
+        <!--optional meta tags-->
+        <meta name="author" content="Patrick Charles A. Soriano"> <!--always include-->
+        <!--required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 2</title>
-    <link rel="stylesheet" href="../bootstrap/_css/bootstrap.css">
-    <link rel="stylesheet" href="../bootstrap/customCSS/customActivity5.css">
-</head>
+        <title>Layout 2</title>
 
-<body class="container-fluid p-0 m-0">
-    
-    <div class="row">
-        <section class="col-md-3">
-            Section
-            <header class="h-25">
-                Header
-            </header>
-            <nav class="h-50">
-                Navigation
-            </nav>
-            <footer>
-                footer
-            </footer>
-        </section>
-        <section class="col-md-9">
-            Section
-            <header class="row m-1">
-                Header
-            </header>
-            <article class="row m-1">
-                Article
-                <header>
-                    Header
-                </header>
-                <p>
-                    p
-                </p>
-                <p>
-                    p
-                </p>
-                <footer>
-                    footer
-                </footer>
-            </article>
-            <article class="row m-1">
-                article
-                <header class="col-md-12">
-                    Header
-                </header>
-                    <div class="col-md-9">
-                        p
-                    </div>
-                    <div class="col-md-3">
-                        aside
-                    </div>
-                <footer>
-                    footer
-                </footer>
-            </article>
-            <footer class="row m-1">
-                footer
-            </footer>
-        </section>
-    </div>
-    <footer class="row">
-            footer
-    </footer>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!--external css-->
+        <link href="../bootstrap/_css/bootstrap.css" rel="stylesheet"> 
+        <link href="../bootstrap/customCSS/custom.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="../bootstrap/customCSS/customActivity5.css">
+    </head>
+ 
+    <body>
+        <!--reposnsive layout using css grids-->
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Mangundayao-APPDEV1</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../_pages/about.html">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">First Grading</a></li>
+                          <li><a class="dropdown-item" href="#">Midterm</a></li>
+                          <li><a class="dropdown-item" href="#">Finals</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Layouts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="../_pages/layout1.html">Layout One</a></li>
+                          <li><a class="dropdown-item" href="#">Layout Two</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="container">
+                <h4>body</h4>
+                <div class="row">
+                    <header><h4>header</h4></header>
+                    <div class="col"><h4>nav</h4></div>
+                </div>
+                <div class="row">
+                    <section id="section-one">
+                        <h4>section</h4>
+                        <header id="header-left"><h4>header</h4></header>
+                        <div id="nav"><h4>nav</h4></div>
+                        <footer id="footer-left"><h4>footer</h4></footer>
+                    </section>
+                    <section id="section-two">
+                        <h4>section</h4>
+                        <div class="row">
+                            <header><h4>header</h4></header>
+                        </div>
+                        <div class="row">
+                            <h4>article</h4>
+                            <div class="col-12"><h4>header</h4></div>
+                            <div class="col-12"><h4>p</h4></div>
+                            <div class="col-12"><h4>p</h4></div>
+                            <div class="col-12"><h4>footer</h4></div>
+                        </div>
+                        <div class="row">
+                            <h4>article</h4>
+                            <div class="col-12"><h4>header</h4></div>
+                            <div class="col-9"><h4>p</h4></div>
+                            <div class="col-3"><h4>aside</h4></div>
+                            <div class="col-12"><h4>footer</h4></div>
+                        </div>
+                        <div class="row">
+                            <footer><h4>footer</h4></footer>
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                    <footer><h4>footer</h4></footer>
+                </div>
+            </div>
+    <!--JavaScript Optional Bundle with Popper-->
+        <!--J<script src="_js/bootstrap.bundle.js"></script> internal js-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!--external js-->
+
+        <!--JavaScript Option2 separate file of JavaScript and Popper-->
+        <!--   
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        -->
 </body>
 
 </html>

@@ -1,16 +1,76 @@
-*{
-    padding: 0;
-    margin: 0;
+body {
+    box-sizing: content-box;
+    display: block;
     text-align: center;
-    margin-bottom: 1rem;
 }
-body{
-    padding: 1rem;
+#section-one {
+    float: left;
+    width: 30%;
+    border: 1px solid;
+}
+#section-two {
+    float: right;
+    width: 70%;
+    border: 1px solid;
+}
+#header-left {
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+}
+#nav {
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+    padding-top: 88%;
+    padding-bottom: 88%;
+}
+#footer-left {
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+    height: 50px;
+}
+.col-12 {
+    margin: 2%;
+    width: 95%;
+}
+.container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid;
+}
+.col {
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+}
+.col-12,
+.col-3 {
+    border: 1px solid;
+    margin: 2%;
+}
+.col-9{
+    border: 1px solid;
+    margin: 2%;
+    width: 66%
 }
 
+.col-9,
+.col-3 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.row {
+    border: 1px solid;
+    margin: 1% 1% 1% 1%;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-color: rgb(230, 0, 0);
+    }
+}
 
-header, nav, section, footer, p, article, aside, div{
-    border: 1px solid black;
-    padding: 1rem;
-    text-align: center;
+/* X-Large devices (large desktops, 1200px and up) x1 */
+@media (min-width: 1200px) {
+    body {
+        background-color: rgb(251, 255, 0);
+    }
 }
