@@ -12,17 +12,17 @@
       <p class="card-text">Helping you develop in-demand skills and knowledge of hardware and software technologies for the competitive IT industry. We highly value research, innovation, and trends to ensure our courses remain relevant to today’s standards.</p>
     </div>
   </div>
-  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">Article</div>
-    <div class="card-body">
-      <h5 class="card-title">Our Objectives</h5>
-      <p class="card-text">applies and innovates methodologies in developing and managing computing solutions; adapts to the fast-changing technologies in diverse environments; exemplifies desirable behavior and attributes; conducts relevant researches for the innovation of Information Technology products and services; initiates and participates in community-based activities that contribute to sustainable development; and utilizes leadership qualities for commendable performance in the field of endeavor.</p>
-    </div>
-  </div>
   <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
     <div class="card-header">Article</div>
     <div class="card-body">
-      <h5 class="card-title">Programs Offered</h5>
-      <p class="card-text">Helping you develop in-demand skills and knowledge of hardware and software technologies for the competitive IT industry. We highly value research, innovation, and trends to ensure our courses remain relevant to today’s standards.</p>
+      <h5 class="card-title">Student</h5>
+      <ul class="group">
+        <li *ngFor="let student of students">
+          {{student.value}}
+        </li>
+      </ul>
+    <label>Add Student:
+      <input #studentInput>{{studentInput.value}}
+    </label>
     </div>
   </div>
