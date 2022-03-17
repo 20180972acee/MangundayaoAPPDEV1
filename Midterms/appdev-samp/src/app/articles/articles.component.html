@@ -1,11 +1,7 @@
 
-  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-    <div class="card-header">Student's List</div>
-    <div class="card-body">
-      <ul class="list-group">
-        <li *ngFor="let student of students">
-          {{student.value}}
-        </li>
-      </ul>
-    </div>
-  </div>
+<h5 class="card-title">Student's List</h5>
+<ul class="list-group">
+  <li class="list-group-item bg-primary" *ngFor="let student of students">
+    {{student.value}}
+  </li>
+</ul>
