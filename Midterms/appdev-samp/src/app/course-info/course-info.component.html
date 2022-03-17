@@ -1,24 +1,48 @@
-<div class="card-group">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">BSIT</h5>
-        <p class="card-text">A program for the foundation of developing professionals in the Information technology industry. This course teaches students on designing and implementing software or applications.</p>
-        <p>{{courseDesc}}</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-         <h3>Student List:</h3>
-          <p>Student Name:{{student.idNumber}}</p>
-          <p>Student Name:{{student.name}}</p>
-          <p>Student Added:{{student.dateAdded}}</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">BSCS</h5>
-        <p class="card-text">A four-year program that includes the study of computing concepts and theories, algorithmic foundations, and new developments in computing.</p>
-  
-      </div>
-    </div>
+<div class="jumbotron">
+  <h1 class="display-3">{{courseCode}}</h1>
+  <h1 class="lead">{{instructor}}</h1>
+  <h1 class="my-4 ">{{courseDesc}}</h1>
+
+
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Add New Student's" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn bg-primary btn-outline-dark" type="button">Add New Student</button>
+  </div>
+</div>
+
+
+<table class="table">
+  <thead>
+    <h3>Student List:</h3>
+    <tr>
+      <th scope="col">Course</th>
+      <th scope="col">ID Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Date Added</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{student.course}}</td>
+      <td>{{student.idNumber}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.dateAdded | date:'shortDate'}}</td>
+      <td>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-dark">View</button>
+        <button type="button" class="btn btn-info ">Edit</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
 

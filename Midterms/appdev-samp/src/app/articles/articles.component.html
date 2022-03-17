@@ -1,28 +1,11 @@
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-    <div class="card-header">Article</div>
-    <div class="card-body">
-        <h5 class="card-title">Our Vision</h5>
-      <p class="card-text">Training a new generation of specialist in the field of Information Technology. The School of Information Technology aims to produce innovative and competent professionals. Enroll with us and “Experience IT Education at its Best”</p>
-    </div>
-  </div>
-  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-    <div class="card-header">Article</div>
-    <div class="card-body">
-      <h5 class="card-title">Our Mission</h5>
-      <p class="card-text">Helping you develop in-demand skills and knowledge of hardware and software technologies for the competitive IT industry. We highly value research, innovation, and trends to ensure our courses remain relevant to today’s standards.</p>
-    </div>
-  </div>
+
   <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-    <div class="card-header">Article</div>
+    <div class="card-header">Student's List</div>
     <div class="card-body">
-      <h5 class="card-title">Student</h5>
-      <ul class="group">
+      <ul class="list-group">
         <li *ngFor="let student of students">
           {{student.value}}
         </li>
       </ul>
-    <label>Add Student:
-      <input #studentInput>{{studentInput.value}}
-    </label>
     </div>
   </div>

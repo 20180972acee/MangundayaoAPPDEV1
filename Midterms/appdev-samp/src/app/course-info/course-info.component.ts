@@ -20,10 +20,10 @@ export class CourseInfoComponent implements OnInit {
   courseDesc='Introduction to Application Development';
 
   student: Student = {
-    idNumber: ' 201012345321',
-    name: 'Susan',
+    idNumber: ' 20180972',
+    name: ' Ace',
     dateAdded: new Date(2022,1,19),
-    course: 'BSIT',
+    course: ' BSIT',
   };
 
   constructor() { }
