@@ -4,17 +4,17 @@
   <div class="row g-2">
     <div class="col-3">
     <!--Component 2 Course-list -->
-      <div class="p-3 border"><app-course-list></app-course-list></div>
+      <div class="p-3 border bg light"><app-course-list></app-course-list></div>
     </div>
       <!--Course-info-->
     <div class="col-6">
-      <div class="p-3 border"><app-course-info></app-course-info></div>
-    </div>
-       <!--Article -->
-    <div class="col-3">
-      <div class="p-3 border"><app-articles></app-articles></div>
+      <div class="p-3 border bg light">
+        <!-- <app-course-info></app-course-info>-->
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
+
 <!---Contacts Info -->
-<app-contacts-info></app-contacts-info>
+<div><app-contacts-info></app-contacts-info></div>
