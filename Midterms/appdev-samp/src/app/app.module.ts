@@ -10,6 +10,10 @@ import { NaviComponent } from './navi/navi.component';
 import { CourseInfoComponent } from './course-info/course-info.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
+import { LoginComponent } from './programs/login/login.component';
+import { BscoeComponent } from './programs/bscoe/bscoe.component';
+import { BscsComponent } from './programs/bscs/bscs.component';
+import { BsitComponent } from './programs/bsit/bsit.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
     CourseInfoComponent,
     ArticlesComponent,
     ContactsInfoComponent,
+    LoginComponent,
+    BscoeComponent,
+    BscsComponent,
+    BsitComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +35,10 @@ import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
       {path: 'articles', component: ArticlesComponent},
       {path: 'contacts-info', component: ContactsInfoComponent},
       {path: 'course-info', component: CourseInfoComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'bscoe', component: BscoeComponent},
+      {path: 'bscs', component: BscsComponent},
+      {path: 'bsit', component: BsitComponent},
     ])
   ],
   providers: [],
