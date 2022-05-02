@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Choco } from '../choco';
+import { CHOCOLATE } from '../choco-listing';
+
+
 
 @Component({
   selector: 'app-view-lists',
@@ -6,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-lists.component.css']
 })
 export class ViewListsComponent implements OnInit {
+  choco: Choco[]=[];
+  constructor(){}
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+
+    ngOnInit(): void {
+      this.choco = CHOCOLATE;
+    }
 
 }

@@ -1,1 +1,12 @@
-<p>view-details works!</p>
+<div class="row mx-auto" style="width: 1000px;" >
+    <div class="col-sm-6"  *ngIf="selectedChoco">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate ID#{{selectedChoco.id}}</h5>
+          <p class="card-text">Chocolate Brand:{{selectedChoco.cname}}</p>
+          <p class="card-text">Description :{{selectedChoco.cdesc}}</p>
+          <p class="card-text">Price ₱{{selectedChoco.cprice}}</p>
+         <button style="margin:8px;" type="button" class="btn btn-info" routerLink="/viewlists">Item Lists</button>
+         <button style="margin:8px;" type="button" class="btn btn-info" routerLink="/contactseller/{{selectedChoco.id}}">Contact Seller</button>
+        </div>
+      </div>

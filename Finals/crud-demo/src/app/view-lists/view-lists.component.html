@@ -1,1 +1,14 @@
-<p>view-lists works!</p>
+<div class="container">
+    <ul class="list-group" *ngFor="let choco of choco">
+      <div class="card mb-3">
+     
+        <div class="card-body">
+          <h5 class="card-title">{{choco.id}}</h5>
+          <p class="card-text">{{choco.cname}}</p>
+          <p class="card-text">{{choco.cdesc}}</p>
+          <a type="button" class="btn btn-primary" routerLink="/viewdetails/{{choco.id}}">View Details</a>
+        </div>
+      </div>
+    
+      </ul>
+    </div>

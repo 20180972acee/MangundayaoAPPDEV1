@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'viewlists/:id', component: ViewListsComponent},
   {path:'contactseller/:id', component: ContactSellerComponent},
   {path:'edititem/:id', component: EditItemComponent},
-  {path:'viewdetails', component: ViewDetailsComponent},
+  {path: 'viewdetails/:id', component: ViewDetailsComponent},
   {path:'myitems', component: MyItemComponent},
   {path:'createitem', component: CreateNewComponent},
   {path:'newitems', component: NewItemsComponent},
